@@ -1,7 +1,8 @@
 
 import ToDo from "./ToDo";
 import T from "./TASK1";
-import Component from "./Component";
+import MyComponent  from "./Components";
+import Props from "./Props";
 // function App(){
 //   const name ="Yash kacha";
 //   return(
@@ -49,9 +50,15 @@ import Component from "./Component";
 // }
 
 function App(){
+  const BtnClicked = () =>{
+    alert("Button Clicked");
+  }
   return(
     <div>
-      <MyComponent/>
+      {/* <MyComponent/> */}
+
+      <Props name = "Yash Kacha" BtnClicked = {BtnClicked}/>
+      
     </div>
   )
 }
