@@ -1,6 +1,7 @@
 
 import ToDo from "./ToDo";
-
+import T from "./TASK1";
+import Component from "./Component";
 // function App(){
 //   const name ="Yash kacha";
 //   return(
@@ -36,12 +37,21 @@ import ToDo from "./ToDo";
 // }
 
 
-function App(){
-  const name = "Yash kacha";
+// function App(){
+//   const name = "Yash kacha";
 
+//   return(
+//     <div>
+//       {name}
+//       <ToDo/>
+//     </div>
+//   )
+// }
+
+function App(){
   return(
     <div>
-      {name}
+      <MyComponent/>
     </div>
   )
 }
