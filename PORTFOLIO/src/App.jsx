@@ -8,10 +8,16 @@ function App() {
   };
   return (
     <div>
+      <p> Date :- 26-12-2025 </p>
       <MyComponent />
+      <br/>
+      <Props name="Yash Kacha" BtnClicked={BtnClicked} />
+      <br/>
+      <br/>
 
-      {/* <Props name="Yash Kacha" BtnClicked={BtnClicked} /> */}
+      <p>Date :- 29-12-2025</p>
 
+      
     </div>
   );
 }
