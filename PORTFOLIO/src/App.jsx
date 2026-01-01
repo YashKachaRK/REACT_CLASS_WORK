@@ -1,23 +1,19 @@
-
-import MyComponent from "./Components";
-import Props from "./Props";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
-  const BtnClicked = () => {
-    alert("Button Clicked");
-  };
   return (
-    <div>
-      <p> Date :- 26-12-2025 </p>
-      <MyComponent />
-      <br/>
-      <Props name="Yash Kacha" BtnClicked={BtnClicked} />
-      <br/>
-      <br/>
-
-      <p>Date :- 29-12-2025</p>
-
-      
+    <div className="font-sans">
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }
