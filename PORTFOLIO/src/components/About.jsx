@@ -56,7 +56,7 @@ const About = () => {
               <span className="font-semibold text-gray-100">Tech Stack:</span> React, Java, MySQL
             </li>
             <li>
-              <span className="font-semibold text-gray-100">Goal:</span> Software Developer
+              <span className="font-semibold text-gray-100">Goal:</span> Full Stack Developer
             </li>
           </ul>
         </div>

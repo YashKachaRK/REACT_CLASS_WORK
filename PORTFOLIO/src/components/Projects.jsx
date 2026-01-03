@@ -12,8 +12,8 @@ const projects = [
     name: "Portfolio Website",
     desc: "Personal portfolio website showcasing projects, skills, and contact details.",
     tech: ["React", "Tailwind CSS", "Vite"],
-    github: "#",
-    demo: "#",
+    github: "https://github.com/YashKachaRK/Portfolio-React.git",
+    demo: "https://portfolio-react-mu-snowy-24.vercel.app/",
   },
 ];
 

@@ -2,8 +2,15 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
+  const submitButton = () => {
+    alert("Message Sent Successfully!");
+  };
+  
   return (
-    <section id="contact" className="bg-gray-900 text-gray-100 py-20 px-6 md:px-20">
+    <section
+      id="contact"
+      className="bg-gray-900 text-gray-100 py-20 px-6 md:px-20"
+    >
       <div className="max-w-4xl mx-auto">
         {/* Section Heading */}
         <h2 className="text-4xl font-bold mb-10 text-center">
@@ -15,19 +22,26 @@ const Contact = () => {
           <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
             <FaEnvelope className="text-3xl text-blue-500 mb-4" />
             <h3 className="font-semibold text-xl mb-2">Email</h3>
-            <p>yash@example.com</p>
+            <a
+              href="ykacha243@rku.ac.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              ykacha243@rku.ac.in
+            </a>
           </div>
 
           <div className="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg hover:scale-105 transform transition duration-300">
             <FaGithub className="text-3xl text-blue-500 mb-4" />
             <h3 className="font-semibold text-xl mb-2">GitHub</h3>
             <a
-              href="https://github.com/"
+              href="https://github.com/YashKachaRK"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-400 hover:underline"
             >
-              github.com/yash
+              github.com/YashKachaRK
             </a>
           </div>
 
@@ -47,7 +61,9 @@ const Contact = () => {
 
         {/* Contact Form */}
         <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
-          <h3 className="text-2xl font-semibold mb-6 text-center">Send a Message</h3>
+          <h3 className="text-2xl font-semibold mb-6 text-center">
+            Send a Message
+          </h3>
           <form className="flex flex-col gap-4">
             <input
               type="text"
@@ -66,6 +82,7 @@ const Contact = () => {
             ></textarea>
             <button
               type="submit"
+              onClick={submitButton}
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded transition duration-300"
             >
               Send Message

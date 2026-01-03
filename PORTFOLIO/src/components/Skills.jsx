@@ -1,9 +1,9 @@
 import React from "react";
 
 const skills = {
-  Frontend: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
-  Backend: ["Java", "JDBC", "Servlets", "Spring Boot"],
-  Database: ["MySQL"],
+  Frontend: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Bootstrap", "AJAX"],
+  Backend: ["Java", "JDBC", "Servlets", "Spring Boot" , "Node.js", "Express.js"],
+  Database: ["MySQL" , "PostgreSQL", "MongoDB"],
   Tools: ["Git", "GitHub", "VS Code"],
 };
 
