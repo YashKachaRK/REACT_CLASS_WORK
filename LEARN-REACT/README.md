@@ -366,3 +366,163 @@ By the end:
 
 
 
+
+
+Good question 👍
+**React does NOT have its own tags.**
+👉 React uses **HTML tags + React Components**.
+
+Let’s make it **very clear** 👇
+
+---
+
+## ✅ 1️⃣ HTML TAGS (MOST COMMON IN REACT)
+
+You can use **all normal HTML tags** in React JSX:
+
+### 🔹 Layout tags
+
+```html
+<div>
+<section>
+<main>
+<header>
+<footer>
+<article>
+```
+
+---
+
+### 🔹 Text tags
+
+```html
+<h1> to <h6>
+<p>
+<span>
+<strong>
+```
+
+---
+
+### 🔹 List tags
+
+```html
+<ul>
+<ol>
+<li>
+```
+
+---
+
+### 🔹 Form tags
+
+```html
+<form>
+<input />
+<label>
+<button>
+<textarea>
+<select>
+```
+
+---
+
+### 🔹 Media tags
+
+```html
+<img />
+<video>
+```
+
+---
+
+## ✅ 2️⃣ REACT COMPONENT TAGS (CUSTOM TAGS)
+
+These are **your own components**
+✔ Must start with **Capital letter**
+
+```jsx
+<Navbar />
+<Card />
+<Profile />
+<LoginForm />
+```
+
+Example:
+
+```jsx
+function Card() {
+  return <div>Card Content</div>;
+}
+```
+
+---
+
+## ❌ 3️⃣ TAGS YOU CANNOT USE
+
+❌ Non-existing HTML tags:
+
+```jsx
+<card>
+<profile>
+<navbar>
+```
+
+Unless they are **React components with Capital letter**.
+
+---
+
+## ⚠️ 4️⃣ SPECIAL JSX DIFFERENCES (VERY IMPORTANT)
+
+| HTML      | React (JSX) |
+| --------- | ----------- |
+| `class`   | `className` |
+| `for`     | `htmlFor`   |
+| `onclick` | `onClick`   |
+
+---
+
+## 🧠 GOLDEN RULE (REMEMBER THIS)
+
+> 🔹 **lowercase** → HTML tag
+> 🔹 **Capital letter** → React component
+
+---
+
+## ✅ BEST TAGS TO USE IN REACT (RECOMMENDED)
+
+For clean UI:
+
+```jsx
+<section>
+<article>
+<header>
+<footer>
+<main>
+```
+
+Example:
+
+```jsx
+<section className="p-6">
+  <h1>Profile</h1>
+  <article>
+    <p>Name: Yash</p>
+  </article>
+</section>
+```
+
+---
+
+## 🎯 FINAL ANSWER
+
+✔ React uses **HTML tags**
+✔ Plus **custom React components**
+✔ ❌ No new HTML tags created by React
+
+---
+
+### 👉 Next?
+
+Say **“Show example UI using correct tags”**
+I’ll build a clean React + Tailwind UI example for you 🚀
