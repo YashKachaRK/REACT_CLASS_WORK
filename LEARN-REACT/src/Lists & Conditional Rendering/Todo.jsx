@@ -48,7 +48,8 @@ function Todo() {
           style={styles.input}
           placeholder="Enter new todo..."
           value={newTask}
-          onChange={(e) => setNewTask(e.target.value)}
+          onChange={(e) => 
+            (e.target.value)}
         />
         <button style={styles.addBtn} onClick={addTodo}>
           Add
