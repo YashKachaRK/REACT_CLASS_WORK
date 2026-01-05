@@ -1,0 +1,44 @@
+.todo-container {
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.todo-container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  background-color: #fff;
+  border-radius: 8px;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.todo-list li:hover {
+  transform: scale(1.02);
+  background-color: #e0f7fa;
+}
+
+.todo-list li.completed .task {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.status {
+  font-weight: bold;
+}
