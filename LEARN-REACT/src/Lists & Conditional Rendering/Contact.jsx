@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 class Contact extends Component {
   constructor(props) {
+    // list banayvi
     super(props);
     this.state = {
       contact: [],
@@ -10,14 +11,17 @@ class Contact extends Component {
       contactNumber: "",
     };
   }
+  // add data in list
   addtoContact = () => {
     if (
+      // check extra space remove
       this.state.firstName.trim() == "" ||
       this.state.lastName.trim() == "" ||
       this.state.contactNumber.trim() == ""
-    ){
+    ) {
       return;
     }
+    // make one varible for input and set list variable
     const newContact = {
       id: Date.now(),
       fname: this.state.firstName,
@@ -31,8 +35,14 @@ class Contact extends Component {
       lastName: "",
       contactNumber: "",
     }));
-    console.log(this.state.firstName);
   };
+  //delete
+  deleteContact = (id) => {
+    this.setState((prevState) => ({
+      contact: prevState.contact.filter((y) => y.id !== id),
+    }));
+  };
+  // iinput fonction
   onfirstnameChange = (e) => {
     this.setState({ firstName: e.target.value });
   };
@@ -69,8 +79,13 @@ class Contact extends Component {
         <ul>
           {contact.map((x) => (
             <li key={x.id}>
-              {x.fname} {x.lname}
-              {x.contactNum}
+              <b>First Name:</b>
+              {x.fname} <br />
+              <b>Second Name:</b> {x.lname}
+              <br />
+              <b>Contact Number</b>
+              {x.contactNum} <br />
+              <button onClick={() => this.deleteContact(x.id)}>Delete</button>
             </li>
           ))}
         </ul>

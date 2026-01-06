@@ -90,6 +90,4 @@ class ContactList extends Component {
 export default ContactList;
 
 // 1. Create `src/ContactList.js`
-// 2. Import and use in `App.js`
-// 3. Add contacts, edit contact details, delete contacts
-// 4. Observe array state management with object updates
+// 2. Import and use in `App.js`h
